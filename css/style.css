@@ -136,8 +136,8 @@ table {
   border-spacing: 0;
 }
 
-.header {
-  background-image: url(../img/logo-background.jpg);
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -180,24 +180,24 @@ h4 {
 }
 
 img {
-  width: 100%;
+  
+  max-width: 100%;
   height: auto;
 }
 
 a {
   color: #ed699a;
   text-decoration: none;
-  /* No underlining */
 }
 
 a:hover,
 a:focus {
   color: #f1ced2;
-  text-decoration: underline;
+  text-decoration: none;
+  
 }
 
 a:visited {
-  /* visited link */
   color: #6b0050;
 }
 
@@ -207,47 +207,7 @@ a:active {
 }
 
 
-/*
-.button {
-  display: inline-block;
- 
-  background-color: #f1ced2;
-  color: #444;
-  
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #f1ced2;
-  
-  transition: 0.2s opacity;
-}
 
-.button:hover {
-  opacity: 0.8;
-  
-  text-decoration: none;
-}
-
-.button:active {
-  color:#ed699a;
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #f1ced2;
-  text-transform: uppercase;
-  border: 2px solid #f1ced2;
-}
-
-.button.contact:hover {
-  background-color: #f1ced2;
-  color: #ffffff;
-}
-
-.button.contact:active {
-  color: pink;
-}
-*/
 
 .button {
   background-color: #f1ced2;
@@ -256,16 +216,18 @@ a:active {
   display: inline-block;
   cursor: pointer;
   color: #444444;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 16px 31px;
+  font-size: 16px;
+  padding: 10px 25px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #27000000;
+  margin: 15px 0 15px 0;
+  transition: 0.4s opacity;
 }
 
 .button:hover {
   background-color: #fab9c1;
-  color: #fff;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .button:active {
@@ -273,3 +235,407 @@ a:active {
   top: 1px;
   color: #ed699a;
 }
+
+
+
+
+/* Layout styling INDEX *******************************************************************************/
+
+
+
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.row {
+  margin: 25px 0; 
+}
+
+
+
+.logo {
+  max-width: 250px;
+  margin-bottom: 15px;
+  
+  
+}
+
+header {
+  background-image: url(../img/background.jpg);
+  background-repeat: repeat ;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.37);
+-moz-box-shadow:    4px 4px 11px 0px rgba(50, 50, 50, 0.37);
+box-shadow:         4px 4px 11px 0px rgba(50, 50, 50, 0.37);
+}
+
+.link {
+      color: #fff
+      font-size: 20px
+      margin: 0px 30px 0px 30px
+      text-decoration: none
+      position: relative
+      
+      &:after
+        bottom: -4px
+        content: ""
+        display: block
+        height: 2px
+        left: 0
+        position: absolute
+        background: #fff
+        opacity: 0.6
+        transition: width 0.3s ease 0s, opacity 0.3s ease 0s
+        width: 0
+      
+      &:hover:after
+        width: 100%
+        opacity: 0.9
+}     
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+/*
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  color: #4a4a4a;
+}
+*/
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  color: #4a4a4a;
+  text-decoration:none;
+  color: inherit;
+  transition: background 0.5s cubic-bezier(.33,.66,.66,1);
+  border-radius: 25px;
+}
+
+
+nav > ul > li > a:visited {
+  color: #6b0050;
+}
+
+nav > ul > li > a:hover {
+  background: #f1ced2;
+  border-radius: 25px;
+}
+
+nav > ul > li > a:active {
+  color: #ed699a;
+}
+
+main {
+  padding-top: 255px;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center; 
+}
+
+#hero h1{
+  margin-bottom: 10px;
+  }
+
+#hero h1::after  {
+    content: "👋";
+    margin-left: 9px;
+  }
+
+#hero p {
+  text-align: left;
+  margin: 15px 0 0 0;
+}
+
+#hero h3 {
+  font-weight: bold;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#work h3 {
+  font-weight: bold;
+}
+
+
+footer h2{
+  text-align: center;
+  margin: 40px 0 10px 0;
+}
+
+footer .container p {
+  text-align: center;
+}
+
+.buttoncenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.linkedin {
+  margin: 10px;
+}
+
+.behance {
+  margin: 10px;
+}
+
+
+
+/* Layout styling ABOUT ************************************************/
+
+
+.about-me-title {
+  text-align: center;
+  margin: 15px;
+}
+
+.mystory p{
+margin-bottom: 10px;
+}
+
+#about  h2 {
+  text-align: center;
+  margin: 30px 0 45px 0;
+}
+
+.relevant-skills h3, h4 {
+font-weight: bold;
+}
+
+.tools-i-use h3 {
+  font-weight: bold;
+}
+
+.tools-i-use {
+margin-bottom: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 1px solid #ffffff;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+  transition: 0.5s all ease-in-out; 
+}
+
+.center:hover { 
+  animation: bounce 1s;
+}
+
+
+
+/* Layout styling PROJECTS */
+
+
+
+.ideal-header h1 {
+text-align: center;
+margin: 15px;
+}
+
+.ideal-header p {
+  margin-bottom: 10px;
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .container {
+    font-size: 1.3em;
+  }
+
+  .button {
+    font-size: 1.1em;
+  } 
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 25px;
+  }
+
+  .logo {
+margin: 0;
+  }
+
+  .navigation {
+    margin: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+
+main {
+  padding-top: 218px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0 15px 0 15px;
+}
+
+svg {
+  text-align: center;
+}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+
+
+
+/* ==============================
+ANIMATION
+================================= */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #ffef15;}
+}
+
+.st0 {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.st1 {
+  animation: 10s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.st2 {
+  animation: 24s cloud-move-reverse infinite alternate linear;
+}
+
+.st3 {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+.g {
+  animation: 24s cloud-move-reverse infinite alternate linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+
+

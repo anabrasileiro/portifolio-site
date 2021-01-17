@@ -21,17 +21,17 @@
 
     <header>
         <!-- HEADER -->
-        <div>
+        <div class="container">
             <picture>
                 <source srcset="img/logo.png" media="(max-width:767px)">
-                <img src="img/logo.png" alt=" Logo">
+                <img class="logo" src="img/logo.png" alt=" Logo">
             </picture>
 
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,18 +40,20 @@
     <main>
         <!-- MAIN -->
 
-        <div>
+        <div class="container">
             <!-- DIV BLOCK 1 -->
-            <h1>IdeAll</h1>
-            <p>IdeAll is an e-commerce mobile app that offers unique home decor items where users can look for
+            <div class="ideal-header">
+                <h1>IdeAll</h1>
+                    <p>IdeAll is an e-commerce mobile app that offers unique home decor items where users can look for
                 inspiration for great ideas and find all they want in a single app that is easy and pleasing to use.
                 Based on a given e-commmerce design brief for this project, I have explored advanced UI design skills,
                 including how to prototype complex animations and interactivity, how to develop a consistent and
                 cohesive brand, and also other deliverables such as user flow diagram,
                 wireframes (low, mid, and high-fidelity), user testing notes and results, and desktop design and
                 mockups.</p>
+            </div>
 
-            <div>
+            <div class="ideal-boards">
                 <!-- DIV WRAPPER -->
                 <picture>
                     <source srcset="img/ideall/board1-2.jpg" media="(max-width:767px)">
@@ -118,27 +120,24 @@
 
 
 
-
-
-
-
-
-    <footer>
+    <footer id="contact">
         <!-- FOOTER -->
-        <div>
+        <div class="container">
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <h2>Get in Touch</h2>
             <p>
                 Do you like my work and want to discuss opportunities? Please get in touch! Skype me at <a
-                    href="skype:ana.matarese">ana.matarese</a> Prefer sending an email?
+                    href="skype:ana.matarese">ana.matarese</a>. Prefer sending an email?
             </p>
-            <div>
+            <div class="buttoncenter">
                 <a href="mailto:hello@anapaula.me" class="button" target="_blank">Email me</a>
             </div>
-            <div>
-                <!--SOCIAL MEDIA -->
-                <a href="https://www.linkedin.com/in/ana-paula-matarese-brasileiro-33a62833/" target="_blank">
-                    <svg enable-background="new 0 0 128 128" height="128px" id="Layer_1" version="1.1"
-                        viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            <div class="socialmedia"><!--SOCIAL MEDIA -->
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/ana-paula-matarese-brasileiro-33a62833/" target="_blank">
+                    <!-- <i class="fab fa-linkedin-in"></i> -->
+                    <svg enable-background="new 0 0 128 128" height="50px" id="Layer_1" version="1.1"
+                        viewBox="0 0 128 128" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g>
                             <circle cx="64" cy="64" fill="#0076B4" r="64" />
@@ -149,9 +148,13 @@
                                 fill="#FFFFFF" />
                         </g>
                     </svg>
-                </a>
+                    </a>
+                </div>
+
+                <div class="behance">
                 <a href="https://www.behance.net/ana-brasileiro" target="_blank">
-                    <svg height="72" viewBox="0 0 72 72" width="72" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <i class="fab fa-behance"></i> -->
+                    <svg height="50" viewBox="0 0 72 72" width="50" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" fill-rule="evenodd">
                             <path
                                 d="M36,72 L36,72 C55.882251,72 72,55.882251 72,36 L72,36 C72,16.117749 55.882251,-3.65231026e-15 36,0 L36,0 C16.117749,3.65231026e-15 -2.4348735e-15,16.117749 0,36 L0,36 C2.4348735e-15,55.882251 16.117749,72 36,72 Z"
@@ -162,9 +165,10 @@
                         </g>
                     </svg>
                 </a>
+            </div>
 
             </div>
-            <p>Copyright ANA BRASILEIRO 2020</p>
+            <p>Copyright Ana Brasileiro 2021</p>
         </div>
     </footer><!-- END FOOTER -->
 

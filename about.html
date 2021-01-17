@@ -21,17 +21,17 @@
 
     <header>
         <!-- HEADER -->
-        <div>
+        <div class="container">
             <picture>
                 <source srcset="img/logo.png" media="(max-width:767px)">
-                <img src="img/logo.png" alt=" Logo">
+                <img class="logo" src="img/logo.png" alt=" Logo">
             </picture>
 
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,50 +42,52 @@
 
 
 
-        <div>
+        <div class="container">
             <!-- DIV BLOCK 1 -->
 
-            <div>
+            <div class="about-me-title">
                 <!-- DIV WRAPPER -->
                 <h1>About Me</h1>
             </div> <!-- END DIV WRAPPER -->
         </div> <!-- END DIV BLOCK 1 -->
 
 
-        <div>
+        <div id="about">
             <!-- DIV BLOCK 2 ORANGE -->
-            <div>
+            <div class="container">
                 <!-- DIV WRAPPER YELLOW -->
                 <picture>
-                    <source srcset="img/profile-pic@2x.jpg" media="(max-width:767px)">
-                    <img src="img/profile-pic@1x.jpg" alt="Ana">
+                    <source srcset="img/profile-pic@1x.jpg" media="(max-width:767px)">
+                    <img src="img/profile-pic@1x.jpg" alt="Ana" class="center">
                 </picture>
 
                 <div>
                     <!-- ROW FOR COLUMNS DARK GREEN -->
 
-                    <div>
+                    <div class="mystory">
                         <!-- COLUMN MY STORY LIGHT GREEN-->
                         <h2>My Story</h2>
-                        <p>Visual and UI Designer with a background in Business and Fashion Design. The experiences
+                        <p>Visual and UI Designer with a background in Business and Fashion Design. </br> The experiences
                             obtained by my previous roles led me to explore users and customers interactions and finally
                             Visual and UI design. More recently I have worked on freelance Visual Design projects which
-                            helped me to expand my knowledge in the area. I am now looking for a role that allows me to
+                            helped me to expand my knowledge in the area. </br> I am now looking for a role that allows me to
                             further develop my Visual and UI design skills and apply them to projects that are
                             intuitive, aesthetically pleasing, technically refined and delightful to interact.</p>
-                        <a href="files/cv-ana-brasileiro.pdf" class="button" target="_blank">Download My Resume</a>
+                            <div class="buttoncenter">
+                        <a href="files/cv-ana-brasileiro.pdf" class="button" class="buttoncenter" target="_blank">Download My Resume</a>
+                    </div>
                     </div> <!-- END COLUMN MY STORY -->
 
 
-                    <div>
+                    <div class="row">
                         <!-- COLUMN SKILLS & TOOLS LIGHT GREEN-->
                         <h2>Skills & Tools</h2>
-                        <div>
+                        
                             <!-- DIV FOR COLUMNS-->
 
-                            <div>
+                            <div class="relevant-skills">
+                                <div class="col-md-6">
                                 <!-- COLUMN REVEVANT SKILLS-->
-                                <h3>Relevant Skills</h3>
                                 <h4>Technical Skills</h4>
                                 <ul>
                                     <li>Wireframing & Prototyping</li>
@@ -96,7 +98,7 @@
                                     <li>Animation and branding</li>
                                     <li>Mobile and Web design</li>
                                     <li>Basic HTML, CSS and Javascript</li>
-                                </ul>
+                                </ul> </br>
                                 <h4> Professional Skills</h4>
                                 <ul>
                                     <li>Creative thinking</li>
@@ -104,10 +106,15 @@
                                     <li>Keen eye for aesthetics and details</li>
                                     <li>Exceptional team player</li>
                                     <li>Multitasking and Accuracy</li>
-                                </ul>
+                                </ul></br>
+                            </div>
+
                             </div> <!-- END COLUMN REVEVANT SKILLS-->
 
-                            <div>
+                            <div class="tools-i-use">
+                                <div class="col-md-6">
+                                
+                                
                                 <!-- TOOLS I USE-->
                                 <h3>Tools I Use</h3>
                                 <ul>
@@ -124,7 +131,7 @@
                                     <li>Jira</li>
 
                                 </ul>
-
+                            </div>
                             </div> <!-- END TOOLS I USE-->
 
                         </div> <!-- DIV FOR COLUMNS-->
@@ -143,23 +150,24 @@
     </main> <!-- END MAIN -->
 
 
-
-    <footer>
+    <footer id="contact">
         <!-- FOOTER -->
-        <div>
+        <div class="container">
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <h2>Get in Touch</h2>
             <p>
                 Do you like my work and want to discuss opportunities? Please get in touch! Skype me at <a
-                    href="skype:ana.matarese">ana.matarese</a> Prefer sending an email?
+                    href="skype:ana.matarese">ana.matarese</a>. Prefer sending an email?
             </p>
-            <div>
+            <div class="buttoncenter">
                 <a href="mailto:hello@anapaula.me" class="button" target="_blank">Email me</a>
             </div>
-            <div>
-                <!--SOCIAL MEDIA -->
-                <a href="https://www.linkedin.com/in/ana-paula-matarese-brasileiro-33a62833/" target="_blank">
-                    <svg enable-background="new 0 0 128 128" height="128px" id="Layer_1" version="1.1"
-                        viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            <div class="socialmedia"><!--SOCIAL MEDIA -->
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/ana-paula-matarese-brasileiro-33a62833/" target="_blank">
+                    <!-- <i class="fab fa-linkedin-in"></i> -->
+                    <svg enable-background="new 0 0 128 128" height="50px" id="Layer_1" version="1.1"
+                        viewBox="0 0 128 128" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g>
                             <circle cx="64" cy="64" fill="#0076B4" r="64" />
@@ -170,9 +178,13 @@
                                 fill="#FFFFFF" />
                         </g>
                     </svg>
-                </a>
+                    </a>
+                </div>
+
+                <div class="behance">
                 <a href="https://www.behance.net/ana-brasileiro" target="_blank">
-                    <svg height="72" viewBox="0 0 72 72" width="72" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <i class="fab fa-behance"></i> -->
+                    <svg height="50" viewBox="0 0 72 72" width="50" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" fill-rule="evenodd">
                             <path
                                 d="M36,72 L36,72 C55.882251,72 72,55.882251 72,36 L72,36 C72,16.117749 55.882251,-3.65231026e-15 36,0 L36,0 C16.117749,3.65231026e-15 -2.4348735e-15,16.117749 0,36 L0,36 C2.4348735e-15,55.882251 16.117749,72 36,72 Z"
@@ -183,9 +195,10 @@
                         </g>
                     </svg>
                 </a>
+            </div>
 
             </div>
-            <p>Copyright ANA BRASILEIRO 2020</p>
+            <p>Copyright Ana Brasileiro 2021</p>
         </div>
     </footer><!-- END FOOTER -->
 
