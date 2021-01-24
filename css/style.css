@@ -140,10 +140,6 @@ table {
   box-sizing: border-box;
 }
 
-/*.header {
-  background-image: url(../img/logo-background.jpg);
-}*/
-
 body {
   background-color: #ffffff;
   font-family: 'Quicksand', sans-serif;
@@ -258,25 +254,23 @@ a:active {
 }
 
 
-
 .logo {
-  max-width: 250px;
-  margin-bottom: 15px;
-  
-  
+  max-width: 150px;
+  margin-bottom: 5px;
 }
 
 header {
   background-image: url(../img/background.jpg);
   background-repeat: repeat ;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.37);
 -moz-box-shadow:    4px 4px 11px 0px rgba(50, 50, 50, 0.37);
 box-shadow:         4px 4px 11px 0px rgba(50, 50, 50, 0.37);
 }
+
+/*
 
 .link {
       color: #fff
@@ -301,31 +295,15 @@ box-shadow:         4px 4px 11px 0px rgba(50, 50, 50, 0.37);
         width: 100%
         opacity: 0.9
 }     
+*/
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
-/*
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1em;
-  color: #4a4a4a;
-}
-*/
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -349,12 +327,51 @@ nav > ul > li > a:hover {
   border-radius: 25px;
 }
 
+
+
 nav > ul > li > a:active {
   color: #ed699a;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 24px;
+}
+
+.navtoggle li .icon {
+  color: #6b0050;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #6b0050;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 main {
-  padding-top: 255px;
+  padding-top: 140px;
 }
 
 #hero {
@@ -370,7 +387,7 @@ main {
 
 #hero h1::after  {
     content: "👋";
-    margin-left: 9px;
+    margin-left: 10px;
   }
 
 #hero p {
@@ -492,7 +509,7 @@ margin: 15px;
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -512,8 +529,13 @@ Medium devices (640px and larger)
     margin-top: 25px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
   .logo {
-margin: 0;
+    max-width: 250px;
+    margin: 0;
   }
 
   .navigation {
@@ -525,26 +547,42 @@ margin: 0;
   }
 
 
-main {
-  padding-top: 218px;
-}
+  main {
+    padding-top: 218px;
+  }
 
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 15px 0 15px;
+  }
+
+  svg {
+    text-align: center;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
   
-}
 
-[class*="col-"] {
-  float: left;
-  padding: 0 15px 0 15px;
-}
-
-svg {
-  text-align: center;
-}
 
 }
 
