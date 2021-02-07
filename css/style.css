@@ -180,10 +180,10 @@ h4 {
 }
 
 img {
-  
   max-width: 100%;
   height: auto;
 }
+
 
 a {
   color: #ed699a;
@@ -197,9 +197,7 @@ a:focus {
   
 }
 
-a:visited {
-  color: #6b0050;
-}
+
 
 a:active {
   /* selected link */
@@ -207,26 +205,22 @@ a:active {
 }
 
 
-
-
 .button {
-  background-color: #f1ced2;
+  background-color: #6b0050;
   border-radius: 28px;
-  border: 1px solid #f1ced2;
   display: inline-block;
   cursor: pointer;
-  color: #444444;
+  color:#f1ced2;
   font-size: 16px;
   padding: 10px 25px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #27000000;
   margin: 15px 0 15px 0;
   transition: 0.4s opacity;
 }
 
 .button:hover {
   background-color: #fab9c1;
-  color: #ffffff;
+  color:#6b0050;
   opacity: 0.8;
 }
 
@@ -270,34 +264,6 @@ header {
 box-shadow:         4px 4px 11px 0px rgba(50, 50, 50, 0.37);
 }
 
-/*
-
-.link {
-      color: #fff
-      font-size: 20px
-      margin: 0px 30px 0px 30px
-      text-decoration: none
-      position: relative
-      
-      &:after
-        bottom: -4px
-        content: ""
-        display: block
-        height: 2px
-        left: 0
-        position: absolute
-        background: #fff
-        opacity: 0.6
-        transition: width 0.3s ease 0s, opacity 0.3s ease 0s
-        width: 0
-      
-      &:hover:after
-        width: 100%
-        opacity: 0.9
-}     
-*/
-
-
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -310,7 +276,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1em;
-  color: #4a4a4a;
+  color: #6b0050;
   text-decoration:none;
   color: inherit;
   transition: background 0.5s cubic-bezier(.33,.66,.66,1);
@@ -362,7 +328,7 @@ nav > ul > li > a:active {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #6b0050;
+  
 }
 
 .navtoggle.responsive li:last-child  {
@@ -382,7 +348,7 @@ main {
 }
 
 #hero h1{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   }
 
 #hero h1::after  {
@@ -391,8 +357,8 @@ main {
   }
 
 #hero p {
-  text-align: left;
-  margin: 15px 0 0 0;
+  text-align: justify;
+  margin: 15px 5px 15px 5px;
 }
 
 #hero h3 {
@@ -407,6 +373,9 @@ main {
   font-weight: bold;
 }
 
+.imagework h2 {
+  text-align: center;
+}
 
 footer h2{
   text-align: center;
@@ -597,6 +566,10 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  #hero p {
+    text-align: justify;
+    margin: 30px 80px 50px 80px;
+  }
 
 
 }
@@ -653,15 +626,6 @@ ANIMATION
 
 
 
-
-
-
-
-
-
-
-
-
 @keyframes bounce {
   0%, 20%, 60%, 100% {
     -webkit-transform: translateY(0);
@@ -681,3 +645,70 @@ ANIMATION
 
 
 
+
+/* IDEALL *************************************/
+
+
+.ideall-header h1 {
+  margin: 15px;
+  text-align: center;
+}
+
+.ideall-header p{
+  margin: 15px;
+  line-height: 2;
+}
+
+.ideall-boards img {
+  display: block;
+}
+
+/* PLANT DEAL *********************************/
+.plantdeal-header h1 {
+  margin: 15px;
+  text-align: center;
+}
+
+.plantdeal-header p{
+  margin: 15px;
+  line-height: 2;
+}
+
+.plantdeal-boards img {
+  display: block;
+}
+
+
+/* DREAM CLOSET *****************************/
+.dreamcloset-header h1 {
+  margin: 15px;
+  text-align: center;
+}
+
+.dreamcloset-header p{
+  margin: 15px;
+  line-height: 2;
+}
+
+.dreamcloset-boards {
+  text-align: center;
+  display: block;
+}
+
+
+
+/* SILVERY ********************************/
+
+.silvery-header h1 {
+  margin: 15px;
+  text-align: center;
+}
+
+.silvery-header p{
+  margin: 15px;
+  line-height: 2;
+}
+
+.silvey-boards img {
+  display: block;
+}
