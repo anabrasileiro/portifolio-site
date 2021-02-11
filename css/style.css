@@ -647,68 +647,162 @@ ANIMATION
 
 
 /* IDEALL *************************************/
-
+.ideall {
+  background-color: #161616;
+}
 
 .ideall-header h1 {
   margin: 15px;
   text-align: center;
+  color: #ffffff;
 }
 
 .ideall-header p{
-  margin: 15px;
+  margin: 20px;
   line-height: 2;
+  color:  #ffffff;
 }
 
 .ideall-boards img {
   display: block;
 }
 
+footer .ideall p {
+  color: #ffffff;
+}
+
+footer .ideall h2 {
+  color: #ffffff;
+}
+
 /* PLANT DEAL *********************************/
+
+.plant-deal {
+  background-color: #161616;
+}
+
+
 .plantdeal-header h1 {
   margin: 15px;
   text-align: center;
+  color: #ffffff;
 }
 
 .plantdeal-header p{
-  margin: 15px;
+  margin: 20px;
   line-height: 2;
+  color: #ffffff;
 }
 
 .plantdeal-boards img {
   display: block;
 }
 
+footer .plant-deal p {
+  color: #ffffff;
+}
+
+footer .plant-deal h2 {
+  color: #ffffff;
+}
+
 
 /* DREAM CLOSET *****************************/
-.dreamcloset-header h1 {
-  margin: 15px;
-  text-align: center;
+
+.dream-closet {
+  background-color: #161616;
 }
 
-.dreamcloset-header p{
+.dream-closet-header h1 {
   margin: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.dream-closet-header p{
+  margin: 20px;
   line-height: 2;
+  color: #ffffff;
 }
 
-.dreamcloset-boards {
-  text-align: center;
+.dream-closet-boards img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.dream-closet-boards {
+  text-align: center;
+}
+
+.dream-closet-boards p {
+  font-style: italic;
+  color: rgb(138, 138, 138);
+  margin-bottom: 20px;
+  font-size: smaller;
+}
+
+.gifmargin {
+  margin: 30px 0 10px 0;
+}
+
+footer .dream-closet p {
+  color: #ffffff;
+}
+
+footer .dream-closet h2 {
+  color: #ffffff;
+}
 
 
 /* SILVERY ********************************/
 
+.silvery {
+  background-color: #161616;
+}
+
 .silvery-header h1 {
   margin: 15px;
   text-align: center;
+  color: #ffffff;
 }
 
 .silvery-header p{
-  margin: 15px;
+  margin: 20px;
   line-height: 2;
+  color: #ffffff;
 }
 
 .silvey-boards img {
   display: block;
+}
+
+footer .silvery p {
+  color: #ffffff;
+}
+
+footer .silvery h2 {
+  color: #ffffff;
+}
+
+
+
+/* BEHANCE ********************************/
+
+.behance svg {
+  transition: transform .5s ease;
+}
+
+.behance:hover svg {
+  transform: scale(1.2);
+}
+
+/* LINKEDIN ********************************/
+
+.linkedin svg {
+  transition: transform .5s ease;
+}
+
+.linkedin:hover svg {
+  transform: scale(1.2);
 }
