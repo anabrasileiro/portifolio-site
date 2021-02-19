@@ -99,12 +99,11 @@ details,
 figcaption,
 figure,
 footer,
-header {
+nav,
+header {}
 
-}
 hgroup,
 menu,
-nav,
 section {
   display: block;
 }
@@ -194,7 +193,7 @@ a:hover,
 a:focus {
   color: #6b0050;
   text-decoration: none;
-  
+
 }
 
 
@@ -206,11 +205,11 @@ a:active {
 
 
 .button {
-  background-color: #6b0050;
+  background-color: #ed699a;
   border-radius: 28px;
   display: inline-block;
   cursor: pointer;
-  color:#f1ced2;
+  color: #fff;
   font-size: 16px;
   padding: 10px 25px;
   text-decoration: none;
@@ -219,8 +218,8 @@ a:active {
 }
 
 .button:hover {
-  background-color: #fab9c1;
-  color:#6b0050;
+  background-color: #F1CED2;
+  color: #444;
   opacity: 0.8;
 }
 
@@ -230,8 +229,56 @@ a:active {
   color: #ed699a;
 }
 
+/* Layout styling NAV BAR NOVA ******************************************************************/
 
+#navbar {
+  overflow: hidden;
+  background-image: url(../img/background.jpg);
+  background-color: #ffffff;
+  background-repeat: repeat;
+  padding: 10px 30px 10px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(107, 107, 107, 0.37);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(114, 113, 113, 0.37);
+  box-shadow: 2px 2px 6px 0px rgba(136, 136, 136, 0.37);
+}
 
+#logo-img {
+  transition: 0.4s;
+}
+
+#navbar a {
+  /* float: left; */
+  color: #000;
+  text-align: center;
+  padding: 4px 15px 4px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 8px;
+  border-radius: 28px;
+  margin: 10px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ed699a;
+  color: #fff;
+}
+
+#navbar a.active {
+  background-color: #ed699a;
+  color: #fff;
+  font-weight: bold;
+}
 
 /* Layout styling INDEX *******************************************************************************/
 
@@ -244,7 +291,7 @@ a:active {
 }
 
 .row {
-  margin: 25px 0; 
+  margin: 25px 0;
 }
 
 
@@ -253,6 +300,7 @@ a:active {
   margin-bottom: 5px;
 }
 
+/*
 header {
   background-image: url(../img/background.jpg);
   background-repeat: repeat ;
@@ -269,7 +317,6 @@ nav > ul {
   padding: 0;
   margin: 0;
 }
-
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -298,12 +345,13 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color: #ed699a;
 }
-
+*/
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -315,46 +363,47 @@ nav > ul > li > a:active {
 }
 
 .navtoggle li .icon {
-  color: #6b0050;
+  color: #ed699a;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  
+
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 
 main {
-  padding-top: 140px;
+  padding-top: 150px;
 }
 
 #hero {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
-#hero h1{
+#hero h1 {
   margin-bottom: 30px;
-  }
+}
 
-#hero h1::after  {
-    content: "👋";
-    margin-left: 10px;
-  }
+#hero h1::after {
+  content: "👋";
+  margin-left: 10px;
+}
 
 #hero p {
   text-align: justify;
@@ -362,11 +411,13 @@ main {
 }
 
 #hero h3 {
-  font-weight: bold;
+  /* font-weight: bold; */
+  margin: 20px 0 20px 0;
 }
 
 #work h2 {
   text-align: center;
+  margin: 20px 0 20px 0;
 }
 
 #work h3 {
@@ -375,9 +426,10 @@ main {
 
 .imagework h2 {
   text-align: center;
+
 }
 
-footer h2{
+footer h2 {
   text-align: center;
   margin: 40px 0 10px 0;
 }
@@ -390,7 +442,7 @@ footer .container p {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .socialmedia {
@@ -410,25 +462,26 @@ footer .container p {
 
 
 
-/* Layout styling ABOUT ************************************************/
+/* Layout styling ABOUT ME ************************************************/
 
 
 .about-me-title {
   text-align: center;
-  margin: 15px;
+  margin: 0 0 30px 0;
 }
 
-.mystory p{
-margin-bottom: 10px;
+.mystory p {
+  margin-bottom: 10px;
 }
 
-#about  h2 {
+#about h2 {
   text-align: center;
-  margin: 30px 0 45px 0;
+  margin: 30px 0 20px 0;
 }
 
-.relevant-skills h3, h4 {
-font-weight: bold;
+.relevant-skills h3,
+h4 {
+  font-weight: bold;
 }
 
 .tools-i-use h3 {
@@ -436,27 +489,29 @@ font-weight: bold;
 }
 
 .tools-i-use {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.center {
+.ana-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   border: 1px solid #ffffff;
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
-  box-shadow: 10px 10px 5px #ccc;
-  -moz-border-radius:25px;
-  -webkit-border-radius:25px;
-  border-radius:25px;
-  transition: 0.5s all ease-in-out; 
+  box-shadow: 10px 10px 5px rgb(223, 223, 223);
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  transition: 0.5s all ease-in-out;
 }
 
-.center:hover { 
+.ana-photo:hover {
   animation: bounce 1s;
 }
+
+
 
 
 
@@ -465,13 +520,28 @@ margin-bottom: 20px;
 
 
 .ideal-header h1 {
-text-align: center;
-margin: 15px;
+  text-align: center;
+  margin: 15px;
 }
 
 .ideal-header p {
   margin-bottom: 10px;
 }
+
+
+/* @media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+} */
 
 
 
@@ -484,26 +554,46 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  .about-me-title {
+    text-align: center;
+    margin: 30 0 30px 0;
+  }
+
+
   .container {
     font-size: 1.3em;
   }
 
   .button {
+    background-color: #ed699a;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 25px;
+    text-decoration: none;
+    margin: 15px 0 15px 0;
+    transition: 0.4s opacity;
+  }
+
+  /* .button {
     font-size: 1.1em;
-  } 
+  } */
+
 
   nav {
     width: auto;
-    float: right;
+    float: none;
     margin-top: 25px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
   .logo {
-    max-width: 250px;
+    max-width: 200px;
     margin: 0;
   }
 
@@ -511,13 +601,14 @@ Medium devices (640px and larger)
     margin: 0;
   }
 
+
   .col-md-6 {
     width: 50%;
   }
 
 
   main {
-    padding-top: 218px;
+    padding-top: 115px;
   }
 
 
@@ -525,7 +616,7 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
-    
+
   }
 
   [class*="col-"] {
@@ -537,7 +628,7 @@ Medium devices (640px and larger)
     text-align: center;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -550,7 +641,22 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
-  
+  #navbar-right {
+    margin-top: 25px;
+    float: right;
+  }
+
+#work h2 {
+  margin: 30px 0 50px 0;
+}
+
+#work h3 {
+  margin: 0 0 10px 0;
+}
+
+.ana-photo {
+  width: 40%;
+}
 
 
 }
@@ -578,56 +684,19 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 
 
-
-/* ==============================
-ANIMATION
-================================= */
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #ffef15;}
-}
-
-.st0 {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.st1 {
-  animation: 10s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.st2 {
-  animation: 24s cloud-move-reverse infinite alternate linear;
-}
-
-.st3 {
-  animation: 20s cloud-move infinite alternate linear;
-}
-
-.g {
-  animation: 24s cloud-move-reverse infinite alternate linear;
-}
 
 
 
 @keyframes bounce {
-  0%, 20%, 60%, 100% {
+
+  0%,
+  20%,
+  60%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -647,6 +716,7 @@ ANIMATION
 
 
 /* IDEALL *************************************/
+
 .ideall {
   background-color: #161616;
 }
@@ -657,10 +727,10 @@ ANIMATION
   color: #ffffff;
 }
 
-.ideall-header p{
+.ideall-header p {
   margin: 20px;
   line-height: 2;
-  color:  #ffffff;
+  color: #ffffff;
 }
 
 .ideall-boards img {
@@ -688,7 +758,7 @@ footer .ideall h2 {
   color: #ffffff;
 }
 
-.plantdeal-header p{
+.plantdeal-header p {
   margin: 20px;
   line-height: 2;
   color: #ffffff;
@@ -719,7 +789,7 @@ footer .plant-deal h2 {
   color: #ffffff;
 }
 
-.dream-closet-header p{
+.dream-closet-header p {
   margin: 20px;
   line-height: 2;
   color: #ffffff;
@@ -767,7 +837,7 @@ footer .dream-closet h2 {
   color: #ffffff;
 }
 
-.silvery-header p{
+.silvery-header p {
   margin: 20px;
   line-height: 2;
   color: #ffffff;
